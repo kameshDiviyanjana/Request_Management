@@ -1,0 +1,197 @@
+
+
+<div class=" myclass flex items-center justify-center">
+  <div class=" nextclass ">
+  
+    <div class=" ">
+        <form  #taskForm="ngForm"  #jjj="ngForm"  (ngSubmit)="OnFormSubmitted(taskForm)" >
+            <div class="max-w-9xl mx-auto py-8 px-4 ">
+                <h2 class="text-2xl font-bold mb-6 text-center text-white">Service Request Form </h2>
+                <div class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+                  <div class='grid grid-cols-3 gap-6'>
+                    <div class="mb-4">
+                      <label class="block text-gray-700 text-sm font-bold mb-2">Booking date </label>
+                      <input
+                        type="date"
+                        id="Dateonly"
+                        name="Dateonly"
+                       
+                        class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                      ngModel   >
+                    </div>
+
+                    <div class="mb-4">
+                      <label class="block text-gray-700 text-sm font-bold mb-2">Arrive date</label>
+                      <input
+                        type="date"
+                        id="Dateonlyend"
+                        name="Dateonlyend"
+                       
+                        class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                      ngModel   >
+                    </div>
+        
+                    <div class="mb-4">
+                      <label class="block text-gray-700 text-sm font-bold mb-2">Location</label>
+                      <select
+                        id="location"
+                        name="location"
+                       
+                        class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                         ngModel>
+                        <option value="">Select Location</option>
+                        <option   value="1th floor">1th floor</option>
+                        <option value="2th floor">2th floor</option>
+                        <option value="3th floor">3th floor</option>
+                      </select>
+                    </div>
+                  </div>
+        
+                  <div class="mb-4">
+                    <label class="block text-gray-700 text-sm font-bold mb-2">Customer Name</label>
+                    <input
+                      type="text"
+                      id="Name"
+                      name="Name"
+                      placeholder="Enter Service"
+                     
+                      class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                       ngModel   />
+                  </div>
+
+                    <div class="mb-4">
+                    <label class="block text-gray-700 text-sm font-bold mb-2">Adress Name</label>
+                    <input
+                      type="text"
+                      id="addres"
+                      name="addres"
+                      placeholder="Enter Service"
+                     
+                      class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                      ngModel  />
+                  </div>
+
+                    <div class="mb-4">
+                    <label class="block text-gray-700 text-sm font-bold mb-2">Phone Number</label>
+                    <input
+                      type="text"
+                      id="phoneNumber"
+                      name="phoneNumber"
+                      placeholder="Enter Requested By"
+                     
+                      class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                       ngModel/>
+                  </div>
+        
+                    <div class="mb-4">
+                    <label class="block text-gray-700 text-sm font-bold mb-2">Status</label>
+                    <select
+                      id="Status"
+                      name="Status"
+                     
+                      class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                      ngModel   >
+                      <option value="">Select Status</option>
+                      <option value="New">New</option>
+                      <option value="In Progress">In Progress</option>
+                      <option value="Escalated">Escalated</option>
+                      <option value="On Hold">On Hold</option>
+                    </select>
+                  </div>
+        
+                  <div class='grid grid-cols-2 gap-6'>
+                    <div class="mb-4">
+                      <label class="block text-gray-700 text-sm font-bold mb-2">Priority</label>
+                      <select
+                        id="priority"
+                        name="priority"
+                       
+                        class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                        ngModel  >
+                        <option value="">Select Priority</option>
+                        <option value="Low">Low</option>
+                        <option value="Medium">Medium</option>
+                        <option value="High">High</option>
+                      </select>
+                    </div>
+        
+                    <div class="mb-4">
+                      <label class="block text-gray-700 text-sm font-bold mb-2">Packeage </label>
+                      <select
+                        id="packeage"
+                        name="packeage"
+                       
+                        class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                        ngModel  >
+                        <option value="">Select Department</option>
+                        <option value="Day1">Day 1</option>
+                        <option value="Golden">Golden</option>
+                        <option value="premium">premium </option>
+                        <option value="platinum">platinum </option>
+                      </select>
+                    </div>
+                  </div>
+        
+                  <!-- <div class='grid grid-cols-3 gap-6'>
+                    <div class="mb-6">
+                      <label class="block text-gray-700 text-sm font-bold mb-2">Assigned To</label>
+                      <input
+                        type="text"
+                        id="assignedTo"
+                        name="assignedTo"
+                        placeholder="Enter Assigned To"
+                        class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                        ([ngModel])="joddata.Ename"/>
+                    </div>
+
+                    <div class="mb-6">
+                      <label class="block text-gray-700 text-sm font-bold mb-2">Assigned To</label>
+                      <input
+                        type="text"
+                        id="assignedTo"
+                        name="assignedTo"
+                        placeholder="Enter Assigned To"
+                        class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                        ([ngModel])="joddata.Joddescription"/>
+                    </div>
+
+                    <div class="mb-6">
+                      <label class="block text-gray-700 text-sm font-bold mb-2">Assigned To</label>
+                      <input
+                        type="text"
+                        id="assignedTo"
+                        name="assignedTo"
+                        placeholder="Enter Assigned To"
+                        class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                        ([ngModel])="joddata.roomenumber"/>
+                    </div>
+
+                    
+                  </div> -->
+        
+                 
+
+                  
+        
+                  <div class="flex items-center gap-4 justify-end">
+                    <button
+                      type="submit"
+                      class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                    >
+                      Submit
+                    </button>
+                    <button
+                    type="submit"
+                    class=" bg-red-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                 (click)="clickhcdd()"  >
+                    close
+                  </button>
+                  </div>
+                </div>
+              </div>
+        </form>
+       
+    </div>
+    
+  </div>
+</div>

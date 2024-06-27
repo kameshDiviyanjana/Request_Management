@@ -1,0 +1,32 @@
+<div class='w-full  bg-white mt-7'>
+    <div class=' px-8 py-5 '>
+   <div class=''>
+   <h1 class=' text-center font-serif text-4xl  textm '>Offers</h1>
+   </div>
+   <div class=' lg:grid lg:grid-cols-3 gap-5 mb-12  ml-10 mr-10'>
+                                                                                         
+                   <div class='w-full h-full  bg-slate-50 mt-6 mb-10 shadow-2xl transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 hover:bg-slate-50 duration-300'   *ngFor=" let pac of packegaes.package ">
+                <div (click)="goToAbout(pac.id)">
+                    <img [src]='pac.imageUrl'  class=' w-full h-[250px]'/>
+                </div>
+                <div class=' px-4 py-4 mr-7 ml-7 text-center' (click)="goToAbout(pac.id)">
+                <h4 class=' text-center mb-3 text-gray-500'>Rooms & Suites</h4>
+                <p class=' font-bold text-black text-[15px]'>{{pac.title}} </p>
+                <p class=' mt-5 text-gray-500'>{{pac.exclusive}} </p>
+                <p class=' mt-11'>{{pac.prices}} </p>
+                </div>
+                <div class=' flex justify-center '> 
+              
+                </div>
+                
+              </div>
+
+             
+            
+              
+           
+             
+   </div>
+    </div>
+
+</div>
