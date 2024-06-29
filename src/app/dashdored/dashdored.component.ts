@@ -1,5 +1,6 @@
 import { Component, EventEmitter, Output } from '@angular/core';
 import { Router } from '@angular/router';
+import { APicallerService } from '../apicaller.service';
 
 @Component({
   selector: 'app-dashdored',
@@ -10,7 +11,7 @@ export class DashdoredComponent {
 
   serchdata : string = ''
   showCreateTaskForm: boolean = false;
-  constructor(private router: Router){
+  constructor(private router: Router,public servisurl:APicallerService){
 
   }
   @Output()
@@ -18,10 +19,12 @@ export class DashdoredComponent {
   
   passtheserchkeyword(){
      
-    console.log(this.serchdata)
-    this.passtheserchword.emit(this.serchdata)
+    //console.log(this.serchdata)
+   this.passtheserchword.emit(this.serchdata)
+   //var p =this.servisurl.serchrecervetion(this.serchdata)
+   //console.log("jjjjjjjjjjjjjjjjj",p)
   }
-
+  
   OpenCreateTaskForm(){
     this.showCreateTaskForm = !this.showCreateTaskForm;
        

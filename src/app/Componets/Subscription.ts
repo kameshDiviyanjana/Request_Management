@@ -1,5 +1,6 @@
-export class Task{
-id :string = ''
+export class Subscription{
+
+    id :string = ''
 Name:string =''
 addres :string =''
  phoneNumber:string =''
@@ -10,4 +11,3 @@ Status : string = ''
 priority : string = ''
 packeage : string = ''
 }
-

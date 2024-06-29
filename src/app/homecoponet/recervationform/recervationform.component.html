@@ -55,7 +55,7 @@
     </div>
     
 </div> -->
-<app-dashdored (passtheserchword)="findtherequest($event)" >
+<app-dashdored (passtheserchword)="findtherequest($event)"  >
   
 </app-dashdored>
 
@@ -78,7 +78,7 @@
                     </tr>
                 </thead>
                 <tbody class="bg-white divide-y divide-gray-200">
-                    <tr class="hover:bg-gray-100"  *ngFor=" let hoteldata of  servisurl.datalist ">
+                    <tr class="hover:bg-gray-100"  *ngFor=" let hoteldata of  datarecerverio ">
                         <td class="px-6 py-4 whitespace-nowrap border-2 border-gray-200">{{hoteldata.dateonly}}</td>
                         <td class="px-6 py-4 whitespace-nowrap border-2 border-gray-200">{{hoteldata.dateonlyend}}</td>
                         <td class="px-6 py-4 whitespace-nowrap border-2 border-gray-200">{{hoteldata.name}}</td>

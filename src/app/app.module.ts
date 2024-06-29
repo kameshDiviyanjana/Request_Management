@@ -10,6 +10,7 @@ import { NavigathionComponent } from './navigathion/navigathion.component';
 import { PackageaComponent } from './packagea/packagea.component';
 import { PackageadataComponent } from './packageadata/packageadata.component';
 import { DashdoredComponent } from './dashdored/dashdored.component';
+import { ReservetionComponent } from './reservetion/reservetion.component';
 
 
 
@@ -22,6 +23,7 @@ import { DashdoredComponent } from './dashdored/dashdored.component';
     PackageaComponent,
     PackageadataComponent,
     DashdoredComponent,
+    ReservetionComponent,
    
   ],
   imports: [
